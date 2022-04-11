@@ -14,7 +14,7 @@
         @add-cinema="addCinema"
         />
 
-
+  //some text
 </template>
 
 <script>
