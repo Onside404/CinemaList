@@ -7,7 +7,6 @@
         <CinemaList 
           v-bind:cinemas="cinemas"
           @remove-cinema="removeCinema"
-          @add-cinema="addCinema"
         />
         <hr>
         <AddCinema 
