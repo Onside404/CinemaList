@@ -14,18 +14,14 @@ import RecommendCinema from "@/components/RecommendCinema.vue"
 export default {
   data() {
     return {
-      films: [
-        {
-      
-        }
-      ]
+      films: []
     }
   },
   mounted() {
+        const key = process.env.VUE_APP_FILMS
         fetch('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1', {
-        method: 'GET',
         headers: {
-            'X-API-KEY': 'f9645a1b-fce4-41af-830f-f6c5d5269406',
+            'X-API-KEY': `${key}`,
             'Content-Type': 'application/json',
         },
     })
@@ -33,7 +29,6 @@ export default {
         .then(json => {
           this.films = json
         })
-        .catch(err => console.log(err))
   },
   components: {
     RecommendCinema

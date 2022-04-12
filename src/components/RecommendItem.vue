@@ -3,7 +3,7 @@
         <li>
             <strong>{{r.filmId}}</strong>
             <div>
-            <p>{{r}}</p>
+            <p>{{r.nameRu}}</p>
             
             </div>            
         </li>
