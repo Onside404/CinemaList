@@ -14,7 +14,10 @@ import RecommendCinema from "@/components/RecommendCinema.vue"
 export default {
   data() {
     return {
-      films: []
+      films: {
+        type: Array,
+        required: true
+      }
     }
   },
   mounted() {
