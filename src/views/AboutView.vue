@@ -4,7 +4,7 @@
     <h3>Here you can watch recommended films</h3>
     <hr>
     <RecommendCinema 
-      :films="films"
+      v-bind="films"
     />
   </div>
 </template>
