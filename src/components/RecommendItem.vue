@@ -1,9 +1,9 @@
 <template>
     <div>
         <li>
-            <strong>{{number + 1}}</strong>
+            <strong>{{r.filmId}}</strong>
             <div>
-            <p>{{r.nameRu}}</p>
+            <p>{{r}}</p>
             
             </div>            
         </li>
@@ -17,7 +17,6 @@ export default {
             type: Object,
             required: true
         },
-        number: Number
     }
 }
 </script>

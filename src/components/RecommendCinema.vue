@@ -2,8 +2,7 @@
     <div>
         <ul>
             <RecommendItem 
-                v-for="(r, n) in films" :key="r"
-                :number="n"
+                v-for="r in films" :key="r"
                 :r="r"
             />
         </ul>
