@@ -50,7 +50,6 @@ export default {
     },
     methods: {
         onSubmit() {
-            console.log('Submit', this.title, this.director, this.genre)
             if (this.title.trim()) {
                 const newCinema = {
                     id: Date.now(),

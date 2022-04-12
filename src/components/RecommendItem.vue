@@ -1,15 +1,11 @@
 <template>
     <div>
         <li>
-            <strong>{{index + 1}}</strong>
+            <strong>{{number + 1}}</strong>
             <div>
-            <p>Название: {{cinema.title}}</p>
-            <p>Режисер: {{cinema.director}}</p>
-            <p>Жанр: {{cinema.genre}}</p>
-            </div>
-            <button class="rm" 
-                v-on:click="$emit('remove-cinema', cinema.id)"            
-            >&times;</button>
+            <p>{{r.nameRu}}</p>
+            
+            </div>            
         </li>
     </div>
 </template>
@@ -17,11 +13,11 @@
 <script>
 export default {
     props: {
-        cinema: {
+        r: {
             type: Object,
             required: true
         },
-        index: Number
+        number: Number
     }
 }
 </script>
