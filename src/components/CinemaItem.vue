@@ -4,7 +4,7 @@
             <strong>{{index + 1}}</strong>
             <div>
             <p>Название: {{cinema.title}}</p>
-            <p>Режисер: {{cinema.director}}</p>
+            <p>Режиссер: {{cinema.director}}</p>
             <p>Жанр: {{cinema.genre}}</p>
             </div>
             <button class="rm" 

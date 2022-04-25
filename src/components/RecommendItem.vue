@@ -1,13 +1,12 @@
-<template>
-    <div>
-        <li>
-            <strong>{{r.filmId}}</strong>
-            <div>
-            <p>{{r.nameRu}}</p>
-            
-            </div>            
-        </li>
+<template>      
+    <div class="row">
+        <div class="text">
+            <strong>{{index + 1}}</strong>
+            <p>Название: {{r.nameRu}}</p>
+
+        </div>
     </div>
+
 </template>
 
 <script>
@@ -17,27 +16,26 @@ export default {
             type: Object,
             required: true
         },
+        index: Number
     }
 }
 </script>
 
 <style scoped>
-    li {
-        border: 1px solid;
-        display: flex;
-        justify-content: space-between;
-        padding: .5rem 2rem;
-        margin: 1rem;
+    .row {
+        display: inline-block;
+        margin: 2rem;
+        padding: 2rem;
+        border: 2px solid;
+        width: 20rem;
+        height: 15rem;
+        background: #EB9464;
     }
-
-    .rm{
-        background:#A9A6A5;
-        color: #000;
-        height: 25px;
-        border: 50%;
-        font-weight: bold;
+    .text {
+        text-align: left;
     }
     p {
-        justify-content: center;
+        text-align: center;
     }
+
 </style>

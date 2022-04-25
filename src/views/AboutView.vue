@@ -4,7 +4,7 @@
     <h3>Here you can watch recommended films</h3>
     <hr>
     <RecommendCinema 
-      v-bind="films"
+      :films="films"
     />
   </div>
 </template>
@@ -14,10 +14,7 @@ import RecommendCinema from "@/components/RecommendCinema.vue"
 export default {
   data() {
     return {
-      films: {
-        type: Array,
-        required: true
-      }
+      films: []
     }
   },
   mounted() {
@@ -30,7 +27,7 @@ export default {
     })
         .then(res => res.json())
         .then(json => {
-          this.films = json
+          this.films = json.films
         })
   },
   components: {
