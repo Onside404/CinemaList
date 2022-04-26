@@ -76,4 +76,12 @@ export default {
     input {
         margin: 5px;
     }
+    span {
+      margin: 10px;
+      padding: 5px;
+    }
+    button {
+      margin: 10px;
+      color: silver;
+    }
  </style>

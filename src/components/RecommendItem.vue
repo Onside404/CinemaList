@@ -1,12 +1,13 @@
 <template>      
-    <div class="row">
+    <div class="container">
         <div class="text">
-            <strong>{{index + 1}}</strong>
+            <img :src="r.posterUrlPreview" alt="">
             <p>Название: {{r.nameRu}}</p>
-
+            <p>Год выпуска: {{r.year}}</p>
+            <p>Продолжительность: {{r.filmLength}}</p>
+            <strong class="number">{{index + 1}}</strong>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -22,20 +23,24 @@ export default {
 </script>
 
 <style scoped>
-    .row {
-        display: inline-block;
-        margin: 2rem;
+    .container {
+        margin: 1rem;
         padding: 2rem;
         border: 2px solid;
         width: 20rem;
-        height: 15rem;
+        height: 32rem;
         background: #EB9464;
     }
     .text {
-        text-align: left;
-    }
-    p {
         text-align: center;
     }
-
+    .number {
+        display: flex;
+        justify-content: flex-end;
+    }
+    img {
+        width: 260px;
+        height: 380px;
+        border: solid white 2px;
+    }
 </style>

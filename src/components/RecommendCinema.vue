@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <ul>
+    <div class="row">
             <RecommendItem 
                 v-for="(r, i) in films" :key="r"
                 :r="r"
                 :index="i"
             />
-        </ul>
     </div>
 </template>
 
@@ -21,10 +19,9 @@ export default {
 </script>
 
 <style scoped>
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
 </style>
