@@ -30,13 +30,9 @@ export default {
         width: 20rem;
         height: 32rem;
         background: #EB9464;
-    }
+    }    
     .text {
         text-align: center;
-    }
-    .number {
-        display: flex;
-        justify-content: flex-end;
     }
     img {
         width: 260px;
